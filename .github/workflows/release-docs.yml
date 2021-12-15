@@ -18,9 +18,6 @@ jobs:
 
     - name: Version
       uses: tcurdt/action-verify-version-maven@main
-      with:
-        prefix: refs/tags/${{ env.project }}-
-      id: version
 
     - name: Setup
       uses: actions/setup-java@v2
